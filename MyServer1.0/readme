@@ -1,0 +1,9 @@
+引入Nginx
+
+修改的文件:
+main.cpp
+
+docker 命令：
+docker run -it -p 8083:8080 -p 8084:8081 my-cpp-server1
+docker ps
+docker exec -it [CONTAINER ID] bash

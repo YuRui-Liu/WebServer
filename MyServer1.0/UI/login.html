@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="/login" method="post">
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html> <!-- 声明文档类型为 HTML5 -->
+<html lang="en"> <!-- 根元素，设置页面语言为英语 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 为移动设备设置视口，确保页面在不同设备上正确显示 -->
+    <title>Login</title> <!-- 页面标题 -->
+    <style>
+        /* CSS 样式开始 */
+        body {
+            font-family: Arial, sans-serif; /* 设置字体 */
+            background-color: #ba5959; /* 设置背景颜色 */
+            display: flex; /* 使用弹性盒布局 */
+            justify-content: center; /* 水平居中内容 */
+            align-items: center; /* 垂直居中内容 */
+            height: 100vh; /* 高度占满视口高度 */
+            margin: 0; /* 移除默认边距 */
+            padding: 0; /* 移除默认内边距 */
+            box-sizing: border-box; /* 更改盒模型，使元素的宽高包含内边距和边框 */
+        }
+        
+        .login-container {
+            background-color: white; /* 设置背景颜色为白色 */
+            width: 350px; /* 宽度 */
+            max-width: 90%; /* 最大宽度，保证响应性 */
+            padding: 30px; /* 内边距 */
+            border-radius: 8px; /* 边框圆角 */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 盒子阴影 */
+            text-align: center; /* 文字居中 */
+            transition: all 0.3s ease-in-out; /* 过渡效果 */
+        }
+
+        form input[type="text"],
+        form input[type="password"] {
+            display: block; /* 使输入框显示为块级元素 */
+            margin-bottom: 15px; /* 底部外边距 */
+            width: 100%; /* 宽度占满容器 */
+            padding: 12px 15px; /* 内边距 */
+            border: 1px solid #ddd; /* 边框 */
+            border-radius: 4px; /* 边框圆角 */
+            box-sizing: border-box; /* 更改盒模型 */
+            outline: none; /* 移除轮廓 */
+            font-size: 16px; /* 字体大小 */
+            transition: border-color 0.2s ease-in-out; /* 边框颜色过渡效果 */
+        }
+
+        form input[type="text"]:focus,
+        form input[type="password"]:focus {
+            border-color: #007bff; /* 聚焦时边框颜色变化 */
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff; /* 背景颜色 */
+            color: white; /* 文字颜色 */
+            border: none; /* 移除边框 */
+            cursor: pointer; /* 鼠标样式 */
+            padding: 12px 20px; /* 内边距 */
+            border-radius: 4px; /* 边框圆角 */
+            font-size: 18px; /* 字体大小 */
+            width: 100%; /* 宽度占满容器 */
+            text-transform: uppercase; /* 文字大写 */
+            letter-spacing: 0.1em; /* 字母间距 */
+            transition: background-color 0.3s ease-in-out; /* 背景颜色过渡效果 */
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3; /* 鼠标悬停时背景颜色变化 */
+        }
+
+        @media (max-width: 500px) {
+            .login-container {
+                width: 90%; /* 在屏幕宽度小于500px时调整容器宽度 */
+            }
+        }
+        /* CSS 样式结束 */
+    </style>
+
+</head>
+<body>
+    <div class="login-container"> <!-- 登录表单容器 -->
+        <form action="/login" method="post"> <!-- 表单标签，提交地址为 /login，方法为 POST -->
+            <h2>Login Form</h2> <!-- 表单标题 -->
+            <input type="text" name="username" placeholder="Username"> <!-- 用户名输入框 -->
+            <input type="password" name="password" placeholder="Password"> <!-- 密码输入框 -->
+            <input type="submit" value="Login"> <!-- 提交按钮 -->
+        </form>
+    </div>
+</body>
+</html>
